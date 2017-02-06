@@ -47,7 +47,8 @@ public:
 	Product(const Product & s);
 	 ~Product();
 	 Product&	operator=(Product &copy);
-	get_price() const;	get_name() const;
+	get_price() const;
+	get_name() const;
 	get_id() const;
 	void	set_price(const int _price) const;
 	void	set_name(const std::string _name) const;

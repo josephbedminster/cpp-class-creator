@@ -300,8 +300,12 @@ function classCreat($name, $student, $virtual, $includes, $login, $variables) {
 	file_put_contents($name_cpp, $template_cpp);
 
 	echo "Fichiers créés : ".$name_cpp." + ".$name_hh."\n";
-	echo "Ouvrir les fichiers ? y/n ";
-	if(trim(fgets(STDIN)) == 'y')
+	echo "Ouvrir les fichiers ? y (default), s (SublimText), n (No) : ";
+	$open = trim(fgets(STDIN));
+	if ($open == 'y')
+		exec("open ".$name_cpp." && open ".$name_hh);
+	else if ($open == 's')
 		exec("/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl .");
+	return;
 
 }

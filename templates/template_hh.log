@@ -1,0 +1,30 @@
+//
+// {{classname}}.hh for  in {{path}}
+// 
+// Made by {{student}}
+// Login   <{{login}}@etna-alternance.net>
+// 
+// Started on  {{date}} {{student}}
+// Last update {{date}} {{student}}
+//
+#ifndef {{maj_classname}}_HH
+# define {{maj_classname}}_HH
+{{includes}}
+
+class {{classname}}
+{
+public:
+{{vars0}}
+	{{classname}}();
+	{{classname}}(const {{classname}} & s);
+	{{virtual}} ~{{classname}}();
+	{{virtual}} {{classname}}&	operator=({{classname}} &copy);
+{{gettersDefPrivate}}
+{{gettersDefProtected}}
+{{settersDefPrivate}}
+{{settersDefProtected}}
+{{vars1}}
+{{vars2}}
+};
+
+#endif

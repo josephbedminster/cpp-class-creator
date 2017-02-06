@@ -41,7 +41,8 @@ Example output
 class Product
 {
 public:
-	int	i;	float	f;
+	int	i;
+	float	f;
 	Product();
 	Product(const Product & s);
 	 ~Product();
@@ -52,7 +53,8 @@ public:
 	void	set_name(const std::string _name) const;
 	void	set_id(const int _id) const;
 private:
-	int	_price;	std::string	_name;
+	int	_price;
+	std::string	_name;
 protected:
 	int	_id;
 };

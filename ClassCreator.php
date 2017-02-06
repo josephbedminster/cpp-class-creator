@@ -133,7 +133,7 @@ function prepareVariables($variables) {
 			for ($j = 0; $j < count($variables[0][$i]); $j++) {
 				$vars[0] .= "\t".$variables[0][$i][$j];
 			}
-			$vars[0] .= ";";
+			$vars[0] .= ";\n";
 		}
 	}
 	else $variables[0] = null;
@@ -143,7 +143,7 @@ function prepareVariables($variables) {
 			for ($j = 0; $j < count($variables[1][$i]); $j++) {
 				$vars[1] .= "\t".$variables[1][$i][$j];
 			}
-			$vars[1] .= ";";
+			$vars[1] .= ";\n";
 		}
 	}
 	else $variables[1] = null;
@@ -153,7 +153,7 @@ function prepareVariables($variables) {
 			for ($j = 0; $j < count($variables[2][$i]); $j++) {
 				$vars[2] .= "\t".$variables[2][$i][$j];
 			}
-			$vars[2] .= ";";
+			$vars[2] .= ";\n";
 		}
 	}
 	else $variables[2] = null;

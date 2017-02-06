@@ -15,19 +15,19 @@
 class Product
 {
 public:
-	int	i;	float	f;
+	int	i;
+	float	f;
 	Product();
 	Product(const Product & s);
-	 ~Product();
-	 Product&	operator=(Product &copy);
-		get_price() const;	get_name() const;
-		get_id() const;
-	void	set_price(const int _price ) const;void	set_name(const std::string _name ) const;
-	void	set_id(const int _id ) const;
-
+	~Product();
+	Product&	operator=(Product &copy);
+	get_price() const;
+	get_name() const;
+	get_id() const;
+	void	set_price(const int _price ) const;void	set_name(const std::string _name) const;
+	void	set_id(const int _id) const;
 private:
 	int	_price;	std::string	_name;
-
 protected:
 	int	_id;
 };
